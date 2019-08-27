@@ -1,0 +1,401 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "ContactManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "entityframework": "6.2.0",
+          "microsoft.aspnet.identity.entityframework": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        }
+      },
+      "ContactManagement.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ContactManagement.Domain": "1.0.0",
+          "entityframework": "6.2.0"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "ContactManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "entityframework": "6.2.0",
+          "microsoft.aspnet.identity.entityframework": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        }
+      },
+      "ContactManagement.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ContactManagement.Domain": "1.0.0",
+          "entityframework": "6.2.0"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "ContactManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "entityframework": "6.2.0",
+          "microsoft.aspnet.identity.entityframework": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        }
+      },
+      "ContactManagement.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ContactManagement.Domain": "1.0.0",
+          "entityframework": "6.2.0"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "ContactManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "entityframework": "6.2.0",
+          "microsoft.aspnet.identity.entityframework": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Domain.dll": {}
+        }
+      },
+      "ContactManagement.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ContactManagement.Domain": "1.0.0",
+          "entityframework": "6.2.0"
+        },
+        "compile": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManagement.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "files": [
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.1": {
+      "sha512": "jjurNglpmcv0SLBd4Fmar8ZoJ2yqfTf6iuP3p8wVH7Nvanfo8l3qTBzq3qRQz2BQlb6iXJiDWPjcnIImVz512g==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.core/2.2.1",
+      "files": [
+        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
+        "microsoft.aspnet.identity.core.2.2.1.nupkg.sha512",
+        "microsoft.aspnet.identity.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.EntityFramework/2.2.1": {
+      "sha512": "g3tCS3vZ+hPjqrGrkq2hpl2Wc5Ltaj+kInZM80uENHldTHmrvCpVXvTXcvTt7HU3vupjmYFfNWVFRWCypNZgug==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.entityframework/2.2.1",
+      "files": [
+        "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll",
+        "lib/net45/Microsoft.AspNet.Identity.EntityFramework.xml",
+        "microsoft.aspnet.identity.entityframework.2.2.1.nupkg.sha512",
+        "microsoft.aspnet.identity.entityframework.nuspec"
+      ]
+    },
+    "ContactManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ContactManagement.Domain/ContactManagement.Domain.csproj",
+      "msbuildProject": "../ContactManagement.Domain/ContactManagement.Domain.csproj"
+    },
+    "ContactManagement.Interface/1.0.0": {
+      "type": "project",
+      "path": "../ContactManagement..Interface/ContactManagement.Interface.csproj",
+      "msbuildProject": "../ContactManagement..Interface/ContactManagement.Interface.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "ContactManagement.Domain >= 1.0.0",
+      "ContactManagement.Interface >= 1.0.0",
+      "entityframework >= 6.2.0",
+      "microsoft.aspnet.identity.entityframework >= 2.2.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Automata\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement.Repository\\ContactManagement.Repository.csproj",
+      "projectName": "ContactManagement.Repository",
+      "projectPath": "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement.Repository\\ContactManagement.Repository.csproj",
+      "packagesPath": "C:\\Users\\Automata\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement.Repository\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Automata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement..Interface\\ContactManagement.Interface.csproj": {
+              "projectPath": "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement..Interface\\ContactManagement.Interface.csproj"
+            },
+            "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Automata\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "entityframework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "microsoft.aspnet.identity.entityframework": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

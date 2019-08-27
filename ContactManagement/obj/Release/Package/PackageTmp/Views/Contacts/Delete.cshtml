@@ -1,0 +1,92 @@
+﻿@model ContactManagement.Domain.Contact
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2></h2>
+
+<h3>Are you sure you want to delete @Model.Name?</h3>
+<div>
+    <h4>Contact</h4>
+    <div>
+        @if (Model.ImageData == null)
+        {
+            <div class="form-control-static">No Image</div>
+        }
+        else
+        {
+            <img class="img-thumbnail" width="150" height="150"
+                 src="@Url.Action("GetThumbnailImage", "Contacts",
+                         new { Model.ContactID })" />
+        }
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageMimeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageMimeType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

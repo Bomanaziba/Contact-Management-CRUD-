@@ -1,0 +1,32 @@
+﻿
+
+@model ContactManagement.Domain.Contact 
+
+
+@using (Html.BeginForm("Delete", "Contacts", FormMethod.Post,
+    new { id = "ContactDeleteModalForm" }))
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.ContactID)
+
+    <input type="hidden" name="id" value="@ViewBag.ContactID" />
+
+                    <div class="form-group col-md-12">
+
+                        <h6 class="text-center">Are you sure you want to delete</h6>
+
+                        <div class="col-md-12 text-center">
+                            <h4 class="text-center">@Model.Name</h4>
+                        </div>
+                    </div>
+
+                  <div class="modal-footer">
+                    <div class="form-actions col-md-12 no-color">
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger pull-right" id="createUser" name="createUser">Delete</button>
+                    </div>
+                  </div>
+
+}

@@ -1,0 +1,15 @@
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement.Repository.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement.Repository.pdb
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement.Domain.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement._.Interface.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement._.Interface.pdb
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\ContactManagement.Domain.pdb
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\obj\Debug\ContactManagement.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\obj\Debug\ContactManagement.Repository.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\obj\Debug\ContactManagement.Repository.pdb
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\obj\Debug\ContactManagement.Repository.csprojAssemblyReference.cache
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Repository\obj\Debug\ContactManagement.Repository.csproj.CopyComplete

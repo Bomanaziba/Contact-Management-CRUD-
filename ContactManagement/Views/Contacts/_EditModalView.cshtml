@@ -1,0 +1,87 @@
+﻿@model ContactManagement.Domain.Contact
+
+
+
+@using (Html.BeginForm("Edit", "Contacts", FormMethod.Post,
+                new { id = "ContactModalViewForm", enctype = "multipart/form-data", @class = "full-form" }))
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.ContactID)
+
+    <input type="hidden" name="id" value="@ViewBag.ContactID" />
+
+    <div class="form-group col-md-12">
+        @Html.LabelFor(model => model.ImageData, htmlAttributes: new { @class = "control-label col-md-4" })
+        <div>
+                @if (Model.ImageData != null)
+                {
+                    <div class="center-block">
+                        <img class="img-thumbnail" width="250" height="250"
+                             src="@Url.Action("GetThumbnailImage", "Contacts",
+                         new { Model.ContactID })" alt="Contact Image" />
+                    </div>
+                }
+                else
+                {
+                    <input name="image" type="file" />
+                }
+         </div>
+
+        
+
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div>
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.LastName) } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div>
+                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.FirstName) } })
+                    @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div>
+                    @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.Phone) } })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.Email) } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <div class="col-md-12">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="createUser" name="createUser">Save Changes</button>
+            </div>
+
+        </div>
+}
+

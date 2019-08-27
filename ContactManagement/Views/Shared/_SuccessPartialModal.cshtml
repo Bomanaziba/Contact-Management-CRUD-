@@ -1,0 +1,16 @@
+﻿@if(ViewBag.Message != null)
+{
+    <div class="alert alert-@if (ViewBag.Status == 0) {
+        @Html.Raw("danger");
+    }else{
+        @Html.Raw("success");
+    } alert-dismissable">
+
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+        &times;
+        </button>
+
+        <p>@ViewBag.Message</p>
+
+    </div>
+}

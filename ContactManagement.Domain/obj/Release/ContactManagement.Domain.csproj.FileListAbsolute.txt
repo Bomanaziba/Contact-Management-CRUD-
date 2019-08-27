@@ -1,0 +1,8 @@
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\bin\Release\ContactManagement.Domain.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\bin\Release\ContactManagement.Domain.pdb
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\obj\Release\ContactManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\obj\Release\ContactManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\obj\Release\ContactManagement.Domain.dll
+C:\Users\Automata\source\repos\ContactManagement\ContactManagement.Domain\obj\Release\ContactManagement.Domain.pdb
